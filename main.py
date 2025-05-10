@@ -1,3 +1,6 @@
+from stats import get_num_words             # Importerer fra stats.py
+
+
 def main():
     book_path = "books/frankenstein.txt"            # Filsti
     text = get_book_text(book_path)                 # Hente test fra filsti
@@ -9,7 +12,5 @@ def get_book_text(path):    # Finn bok fra filsti
     with open(path) as f:   # Gjør noe med f (filen) fra filsti her
         return f.read()     # Les filen
     
-
-from stats import get_num_words
 
 main()
